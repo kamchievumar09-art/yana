@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кызыктуу Баракча</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#1e3c72,#2a5298);
+    color:white;
+    overflow-x:hidden;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:70px;
+    margin-bottom:20px;
+    text-shadow:3px 3px 10px black;
+}
+
+header p{
+    font-size:24px;
+    max-width:700px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    padding:50px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+    overflow:hidden;
+    backdrop-filter:blur(5px);
+    transition:0.5s;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h2{
+    padding:15px;
+    font-size:28px;
+}
+
+.card p{
+    padding:0 15px 20px;
+    font-size:18px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.3);
+    margin-top:40px;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Керемет Дүйнө</h1>
+    <p>
+        HTML жана CSS менен жасалган кызыктуу бир беттүү сайт.
+        Бул жерде кооз сүрөттөр жана заманбап дизайн колдонулган.
+    </p>
+</header>
+
+<section class="gallery">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="">
+        <h2>Тоо</h2>
+        <p>Табияттын эң кооз көрүнүштөрүнүн бири.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e" alt="">
+        <h2>Токой</h2>
+        <p>Жашыл дүйнө адамга тынчтык берет.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+        <h2>Деңиз</h2>
+        <p>Толкундардын үнү өзгөчө атмосфера жаратат.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Кызыктуу HTML Баракча
+</footer>
+
+</body>
+</html>
